@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman SOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Batman SOS</h1>
+        <p>If you're in danger, press the button below to send an SOS signal to Batman!</p>
+        <button id="sosButton">Send SOS</button>
+        
+        <div id="batSignal" class="hidden">
+            <div class="signal-light"></div>
+        </div>
+
+        <div id="countdown" class="hidden">
+            <p>Signal activating in <span id="countdownTimer">5</span> seconds...</p>
+        </div>
+
+        <div id="loading" class="hidden">
+            <p>Sending SOS...</p>
+            <div class="spinner"></div>
+        </div>
+
+        <p id="responseMessage"></p>
+    </div>
+    <audio id="sosSound" src="sos-sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
